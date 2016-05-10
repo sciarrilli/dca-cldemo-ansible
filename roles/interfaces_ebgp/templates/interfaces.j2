@@ -1,6 +1,8 @@
 {% set intvars = interfaces[ansible_hostname] %}
+{#
 {% set bridgevars = bridges[ansible_hostname] -%}
 {% set svivars = SVIs[ansible_hostname] -%}
+#}
 
 # Configured by Ansible
 
@@ -24,9 +26,9 @@ iface {{interface}}
 {% if intvars[interface].accessvlan is defined %}
   bridge-access {{intvars[interface].accessvlan}}
 {% endif %}
-
 {% endfor %}
 
+{#
 {% if ansible_hostname in bridges  %}
 {% for bridge in bridgevars.keys() -%}
 auto {{bridgevars[bridge].name}}
@@ -51,3 +53,4 @@ iface {{svivars[svi].name}}
 {% endif %}
 {% endfor %}
 {% endif %}
+#}
