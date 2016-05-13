@@ -26,6 +26,7 @@ iface {{interface}}
 {% if intvars[interface].accessvlan is defined %}
   bridge-access {{intvars[interface].accessvlan}}
 {% endif %}
+
 {% endfor %}
 
 {#
