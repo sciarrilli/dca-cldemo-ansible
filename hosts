@@ -2,7 +2,14 @@
 leaf01
 leaf02
 
-
 [spines]
 spine01
 spine02
+
+[west]
+spine01
+leaf01
+
+[east]
+spine02
+leaf02

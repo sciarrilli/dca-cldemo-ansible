@@ -7,6 +7,8 @@ fabric:
     leaf01:
         asn: 65011
         fabricports:
+            swp1:
+            swp2:
             swp49:
             swp50:
         networks:
@@ -14,6 +16,8 @@ fabric:
     leaf02:
         asn: 65012
         fabricports:
+            swp1:
+            swp2:
             swp49:
             swp50:
         networks:
